@@ -3,6 +3,7 @@ import Column from "@site/src/components/Column";
 import Highlight from "@site/src/components/Highlight";
 import Row from "@site/src/components/Row";
 import Video from "@site/src/components/Video";
+import GHCode from "@site/src/components/GHCode";
 
 export default {
   ...MDXComponents,
@@ -10,4 +11,5 @@ export default {
   Highlight,
   Row,
   Video,
+  GHCode,
 };
