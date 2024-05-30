@@ -3,7 +3,7 @@ import CodeBlock from "@theme/CodeBlock";
 
 export default function GHCode({
   language,
-  user,
+  user = "departement-info-cem",
   repo,
   filePath,
   endLine,
@@ -11,8 +11,8 @@ export default function GHCode({
   showLineNumber = false,
   branch = "main",
 }: {
-  language: string;
-  user: string;
+  language?: string;
+  user?: string;
   repo: string;
   filePath: string;
   showLineNumber?: boolean;
@@ -44,8 +44,10 @@ export default function GHCode({
   const lines = code.split("\n");
   const slicedLines = lines.slice(startLine < 1 ? 0 : startLine - 1, endLine);
   const linesToDisplay = slicedLines.join("\n");
-  console.log(lines);
-  console.log(linesToDisplay);
+
+  if (language == null) {
+    language = filePath.split(".").at(-1);
+  }
 
   return (
     <CodeBlock showLineNumbers={showLineNumber} language={language}>
