@@ -97,7 +97,7 @@ async function getCode(
 }
 
 function adjustForIgnoredLines(lines: Line[], ignore: string): Line[] {
-  let adjustedLines: Line[];
+  let adjustedLines: Line[] = lines;
   const ignoreGroups: string[] = ignore.split(",");
   ignoreGroups.forEach((ignoreGroup: string) => {
     const ignoreRange: string[] = ignoreGroup.split("-");
@@ -107,19 +107,19 @@ function adjustForIgnoredLines(lines: Line[], ignore: string): Line[] {
       startIgnore.length == 1 ? 0 : +startIgnore[1];
     const endIgnore: string[] = ignoreRange[1].split(":");
     const endIgnoreLine: number = +endIgnore[0];
-    const endIgnoreLineObj: Line = lines.find(
+    const endIgnoreLineObj: Line = adjustedLines.find(
       (line: Line) => line.lineNumber == endIgnoreLine
     );
     const endIgnoreColumn: number =
       endIgnore.length == 1 ? endIgnoreLineObj.code.length : +endIgnore[1];
     const replacementString: string =
       ignoreRange.length <= 2 ? "" : ignoreRange[2];
-    const indexOfFirstLine: number = lines.indexOf(
-      lines.find((line: Line) => line.lineNumber == startIgnoreLine)
+    const indexOfFirstLine: number = adjustedLines.indexOf(
+      adjustedLines.find((line: Line) => line.lineNumber == startIgnoreLine)
     );
 
     adjustedLines = removeUnwantedLines(
-      lines,
+      adjustedLines,
       startIgnoreLine,
       endIgnoreLine,
       endIgnoreColumn,
