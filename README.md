@@ -10,7 +10,7 @@ L'objectif est de générer un site web pour un cours le plus simplement possibl
 2. Clonez et ouvrez le projet forké dans votre éditeur de code préféré.
 3. Dans les paramètres de votre repository, dans la section **Pages**, dans la sous section **Build and deployment**, **Branch**, sélectinonez `gh-pages` et `/ (root)`, puis cliquez sur  le bouton **Save**
 4. Le fichier `config.json` doit être modifié pour contenir les informations liées à votre cours. `nomUrl` doit correspondre au nom du repository Github créé.
-5. Voir [Installation](#installation) et [Développement Local](#développement-local) pour voir comment démarrer le serveur
+5. Voir [Installation](#installation) et [Développement Local](#développement-local) pour voir comment démarrer le serveur (**à partir du répertoire *web***).
 6. Modifiez les documents Markdown qui sont dans la répertoire `docs` selon vos besoins.
 7. Profit
 
