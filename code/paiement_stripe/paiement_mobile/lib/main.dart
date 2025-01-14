@@ -51,11 +51,10 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  StripeCustomer? stripeCustomer;
   bool completed = false;
 
-  Future<Map<String, dynamic>> getPaymentIntent() {
-    var response  = await Dio().get('http://localhost:5194/Stripe/CreatePaymentIntent');
+  Future<Map<String, dynamic>> getPaymentIntent() async {
+    var response  = await Dio().get('http://10.0.2.2:5194/api/Stripe/CreatePaymentIntent');
 
     return response.data;
   }
@@ -101,7 +100,7 @@ class _MyHomePageState extends State<MyHomePage> {
     var data = await getPaymentIntent(); 
 
     // On initialise la feuille de paiement
-    await initPaymentSheet();
+    await initPaymentSheet(data);
 
     try {
       // On affiche la feuille de paiement
