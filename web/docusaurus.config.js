@@ -67,15 +67,15 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "cours/rencontre1.1",
+            docId: "courantes/paiement",
             position: "left",
-            label: "Cours",
+            label: "Capsules",
           },
           {
             type: "docSidebar",
             position: "left",
             sidebarId: "tp",
-            label: "Travaux Pratiques",
+            label: "Capsules passées",
           },
         ],
       },
