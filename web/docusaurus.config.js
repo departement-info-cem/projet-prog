@@ -67,7 +67,7 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "rubriques/sprint0",
+            docId: "rubriques/sprint0-analyse",
             position: "left",
             label: "Rubriques",
           },

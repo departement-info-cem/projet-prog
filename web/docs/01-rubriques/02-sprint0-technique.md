@@ -1,6 +1,4 @@
-# Sprint 0
-
-## Côté technique
+# Sprint 0 - Technique
 
 Le Sprint 0 sert entre autre à mettre en place votre projet. Tout ce qui ne se retrouve pas dans les Sprints de développement doit se retrouver ici.
 
