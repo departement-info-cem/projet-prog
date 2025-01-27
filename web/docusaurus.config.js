@@ -1,11 +1,11 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-import { themes } from 'prism-react-renderer';
+import { themes } from "prism-react-renderer";
 
 const siteConfig = require("./config");
 
-const lightCodeTheme = themes.vsLight
-const darkCodeTheme = themes.vsDark
+const lightCodeTheme = themes.vsLight;
+const darkCodeTheme = themes.vsDark;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -28,10 +28,10 @@ const config = {
   },
 
   markdown: {
-    mermaid: true
+    mermaid: true,
   },
 
-  themes: ['@docusaurus/theme-mermaid'],
+  themes: ["@docusaurus/theme-mermaid"],
 
   presets: [
     [
@@ -67,14 +67,20 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "courantes/paiement",
+            docId: "rubriques/sprint0",
             position: "left",
-            label: "Capsules",
+            label: "Rubriques",
           },
           {
             type: "docSidebar",
             position: "left",
-            sidebarId: "tp",
+            sidebarId: "capsulesCourantes",
+            label: "Capsules courantes",
+          },
+          {
+            type: "docSidebar",
+            position: "left",
+            sidebarId: "capsulesPassees",
             label: "Capsules passées",
           },
         ],
