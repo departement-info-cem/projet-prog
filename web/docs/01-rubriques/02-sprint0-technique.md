@@ -4,6 +4,19 @@ Le Sprint 0 sert entre autre à mettre en place votre projet. Tout ce qui ne se 
 
 Pensez donc à tout ce qui n'a pas de valeur inhérente pour le client qui doit être fait pour permettre au projet de fonctionner.
 
+Pendant le sprint 0, vous allez:
+- faire une planification de sprint
+  - on veut un écran web qui prend un champ texte, quand on envoie le texte avec le bouton, l'application va au serveur et répond "bonjour " suivi du texte envoyé
+  - on veut une application mobile qui effectue la même action
+  - on veut le serveur et l'API nécessaire pour que cela fonctionne
+- on fera des petites mêlées aux demi-journées pour voir où on en est
+- on fera une revue de sprint à la fin pour voir si on a réussi à faire ce qu'on voulait
+  - le coach d'équipe va jouer le rôle de PO pour cette revue
+  - si le travail rencontre votre définition de terminé, c'est gagné sinon on continue
+
+Chaque cérémonie est une version miniature de la vraie cérémonie. Toutefois cela vous permet
+de se remémorer les étapes sur une fonctionnalité qui ne compte pas.
+
 ### Git
 
 - Un Github Classroom a été créé par l'équipe d'enseignants. Demandez leur de vous y ajouter et de vous expliquer comment le rejoindre.
