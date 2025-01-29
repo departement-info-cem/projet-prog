@@ -1,7 +1,7 @@
 # Paiement avec Stripe
 
 
-<Row>
+<!-- <Row>
 
 <Column>
 
@@ -97,4 +97,4 @@ string url = supabase
 
 ## Exemple de code
 
-Vous pouvez regarder l'exemple de code **[paiement_stripe](https://github.com/departement-info-cem/projet-prog/tree/main/code/paiement)**.
+Vous pouvez regarder l'exemple de code **[paiement_stripe](https://github.com/departement-info-cem/projet-prog/tree/main/code/paiement)**. -->
