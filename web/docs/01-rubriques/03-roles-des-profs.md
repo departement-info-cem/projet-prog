@@ -13,6 +13,7 @@ Ce qu'il fait:
   - revue de sprint
   - rétrospective de sprint
 - pendant le sprint 0, il joue le rôle de PO pour la revue de sprint
+
 **Évaluations**: il note les cérémonies (individuel et collectif)
 
 Ce qu'il ne fait pas:
@@ -28,6 +29,7 @@ Ce qu'il fait:
 - mener la planification de sprint
 - assister à la revue de sprint et accepter / refuser les récits utilisateurs
 - répondre aux questions pour clarifier les fonctionnalités
+
 **Évaluations**: il note les fonctionnalités de l'application à la fin du projet (équipe)
 
 Ce qu'il ne fait pas:
@@ -42,6 +44,7 @@ Les coachs techniques sont là pour aider sur la programmation
 Ce qu'il fait:
 - fournir des capsules techniques sur des sujets spécifiques
 - réviser les choix techniques ou des choix d'architecture
+
 **Évaluations**: il note une fonctionnalité que tu as développée (individuel)
 
 Ce qu'il ne fait pas:
@@ -55,6 +58,7 @@ Le coach processus aide à l'analyse du projet
 Ce qu'il fait:
 - il aide dans la documentation des besoins fonctionnels
 - il aide au grooming du backlog avant la planification
+
 **Évaluations**: il note votre dossier d'analyse (individuel)
 
 Ce qu'il ne fait pas:
