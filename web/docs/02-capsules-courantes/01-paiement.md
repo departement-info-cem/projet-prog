@@ -104,44 +104,172 @@ Vous pouvez regarder l'exemple de code **[paiement_stripe](https://github.com/de
 
 ## Créer le code Serveur
 
+Sur le serveur, nous pourrons créer l'intention de paiement.
+
+L'intention de paiement sert à préparer un paiement, mais comme qu'un utilisateur pourrait annuler le paiement, on parle d'intention.
+
 ### Installer le package Nuget
+<Row>
+  <Column size="8">
+    ![Creer le projet](_01-paiement/stripe10.jpg)
+  </Column>
+</Row>
 
 ### Gérer les clients (Facultatif)
+Stripe nous permet de gérer les clients, ce qui peut être pratique pour avoir un historique ou encore pour sauvegarder des méthodes de paiement.
+
+Toutefois, ce n'est pas nécessaire pour être capable d'effecturer des paiements.
+
+```js title="Créer un client"
+  //TODO Ajouter votre clé d'API secrète
+  StripeConfiguration.ApiKey = "sk_test_blablabla_votre_API_KEY_secrete";
+
+  //TODO Créer l'adresse du client
+  AddressOptions address = new AddressOptions() 
+  {
+      City = "Montreal",
+      Country = "Canada",
+      PostalCode = "J4H 4A9",
+      State = "Quebec",
+      Line1 = "945 Chambly"
+  };
+
+  //TODO Créer un client
+  var options = new CustomerCreateOptions
+  {
+      Email = "jim@nad.com",
+      Name = "Jim Nad",
+      Address = address
+  };
+
+  //TODO Envoyer le client à Stripe
+  var service = new CustomerService();
+  Customer customer = service.Create(options);
+```
 
 ### Créer une intention de paiement
 
+```js title="Créer l'intention de paiement"
+  // Ajouter la clé secrète de Stripe ici
+  StripeConfiguration.ApiKey = "sk_test_blablabla_votre_API_KEY_secrete";
+
+  // On choisi les options de notre paiement
+  var options = new PaymentIntentCreateOptions 
+  { 
+      Amount = 6969, 
+      Currency = "cad",
+      AutomaticPaymentMethods = new PaymentIntentAutomaticPaymentMethodsOptions() { Enabled = true },
+      // Si vous utiliser un client pour faire le paiement
+      Customer = customer.Id,
+  };
+
+  // On crée l'intention de paiement à partir de nos options
+  var service = new PaymentIntentService();
+  PaymentIntent pi = service.Create(options);
+
+  // Une fois l'intention de paiement créée, on envoie les informations importantes au client
+  PaymentIntentDTO dto = new PaymentIntentDTO();
+  dto.ClientSecret = pi.ClientSecret;
+  dto.Customer = pi.CustomerId;
+```
 
 ## Créer le code Mobile
 
 ### Installer le package pub.dev
+```shell title="Ajouter flutter_stripe"
+flutter pud add flutter_stripe
+```
 
 ### Configurer le projet Android
+```js title="Modifier android/settings.gradle"
+plugins {
+    id "dev.flutter.flutter-plugin-loader" version "1.0.0"
+    id "com.android.application" version "8.3.2" apply false
+    // TODO - STRIPE - Kotlin doit être à plus de 1.8.0
+    id "org.jetbrains.kotlin.android" version "1.8.22" apply false
+}
+```
+
+```bash title="Modifier android/gradle/wrapper/gradle-wrapper.properties"
+# TODO - STRIPE Assurez-vous d'utiliser au moins Gradle 8
+distributionUrl=https\://services.gradle.org/distributions/gradle-8.4-all.zip
+```
+
+```js title="Ajouter dans android/app/build.gradle"
+// TODO - STRIPE - Cela devrait permettre l'utilisation de Google Pay
+dependencies {
+    implementation 'com.stripe:stripe-android:17.1.1'
+}
+```
+
+```java title="Modifier MainActivity pour utiliser un fragment"
+package org.depinfo.lapin_couvert_mobile
+
+import io.flutter.embedding.android.FlutterActivity
+import io.flutter.embedding.android.FlutterFragmentActivity
+
+// TODO - STRIPE - Changer FlutterActivity pour FlutterFragmentActivity
+class MainActivity: FlutterFragmentActivity()
+```
 
 ### Afficher la feuille de paiement
-
-## Ajoute des images
-
-- suivre les captures d'écran
+Une fois que vous aurez récupéré les informations de l'intention de paiement provenant sur serveur, vous pourrez générer la feuille de paiement
 
 <Row>
   <Column size="8">
-    ![Creer le projet](_27-supabase/create2.png)
+    ![Creer le projet](_01-paiement/stripe11.jpg)
   </Column>
 </Row>
 
-## Ajouter du code
+```java title="On initialise Stripe à l'ouverture de l'application"
+void main() async {
 
-```dart
-final supabase = Supabase.instance.client;
+  WidgetsFlutterBinding.ensureInitialized();
+  
+  // Assigner la clé publique (Publishable Key) de Stripe
+  Stripe.publishableKey = "pk_test_blablabla_votre_API_KEY_pas_secrete";
+  
+  // Assigner un identifiant de marchant, ceci est nécessaire pour les paiement iOS entre autre
+  Stripe.merchantIdentifier = 'info.cegepmontpetit.ca';
+  
+  // On applique les configurations
+  await Stripe.instance.applySettings();
 
-//TODO doc: https://supabase.com/docs/reference/dart/storage-from-getpublicurl
-string url = supabase
-  .storage
-  .from('le-nom-de-mon-bucket')
-  // TODO le bucket doit être public pour qu'on puisse récupérer l'URL public
-  .getPublicUrl("nom-du-fichier");
+  runApp(const MyApp());
+}
 ```
+
+```java title="Ouvrir la feuille de paiement"
+  // Créer la Feuille de paiement avec les bonnes options
+  await Stripe.instance.initPaymentSheet(
+    paymentSheetParameters: SetupPaymentSheetParameters(
+      // On veut utiliser le processus de paiement par défaut
+      customFlow: false,
+      merchantDisplayName: 'Super Flutter_Stripe Demo Infini',
+      // Le client_secret permet d'identifier l'intention de paiement
+      paymentIntentClientSecret: data['client_secret'],
+      // On ajoute le ID du client (si nous utilisons un client, ce n'est pas obligatoire)
+      customerId: data['customer'],
+      // On ajoute Google Pay et Apple Pay
+      applePay: const PaymentSheetApplePay(
+        merchantCountryCode: 'CA',
+      ),
+      googlePay: const PaymentSheetGooglePay(
+        merchantCountryCode: 'CA',
+        testEnv: true,
+      ),
+    ),
+  );
+```
+
+## Suivre les paiements
+Sur votre Dashboard Stripe, vous pourrez suivre les paiements effectués
+<Row>
+  <Column size="8">
+    ![Creer le projet](_01-paiement/stripe12.png)
+  </Column>
+</Row>
 
 ## Exemple de code
 
-Vous pouvez regarder l'exemple de code **[paiement_stripe](https://github.com/departement-info-cem/projet-prog/tree/main/code/paiement)**.
+Vous pouvez regarder l'exemple de code **[paiement_stripe](https://github.com/departement-info-cem/projet-prog/tree/main/code/paiement_stripe)**.

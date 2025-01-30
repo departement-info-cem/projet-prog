@@ -19,7 +19,7 @@ public class StripeController(UserService userService) : Controller
 
 
         // Ajouter la clé secrète de Stripe ici
-        StripeConfiguration.ApiKey = "sk_test_51QfOqBQWucU8YVtBiIzRZuz9lABjqG0UgZPAteyKSrYRBJzjTBd6qtJN94G3Vw1LFFPiBWqDm5zSM00ZRUSdCKvi00687JtwMk";
+        StripeConfiguration.ApiKey = "sk_test_blablabla_votre_API_KEY_secrete";
 
         // On choisi les options de notre paiement
         var options = new PaymentIntentCreateOptions 

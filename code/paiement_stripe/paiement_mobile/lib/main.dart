@@ -63,7 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
     try {
       
       // Créer la Feuille de paiement avec les bonnes options
-     await Stripe.instance.initPaymentSheet(
+      await Stripe.instance.initPaymentSheet(
         paymentSheetParameters: SetupPaymentSheetParameters(
           // On veut utiliser le processus de paiement par défaut
           customFlow: false,
@@ -80,7 +80,6 @@ class _MyHomePageState extends State<MyHomePage> {
             merchantCountryCode: 'CA',
             testEnv: true,
           ),
-          style: ThemeMode.dark,
         ),
       );
       setState(() {
