@@ -1,7 +1,7 @@
 # Paiement avec Stripe
 
 
-<!-- <Row>
+<Row>
 
 <Column>
 
@@ -44,16 +44,63 @@ Mis à jour en janvier 2025
 Vous pouvez regarder l'exemple de code **[paiement_stripe](https://github.com/departement-info-cem/projet-prog/tree/main/code/paiement)**.
 
 ## Compte Stripe
+- Nous allons créer un compte, mais nous ne finaliserons jamais la création du compte, ainsi nous n'aurons pas à entrer un numéro de compte bancaire.
 
 ### Créer le compte
+<Row>
+  <Column size="8">
+    ![Creer le projet](_01-paiement/stripe1.jpg)
+  </Column>
+</Row>
+<Row>
+  <Column size="8">
+    ![Creer le projet](_01-paiement/stripe2.jpg)
+  </Column>
+</Row>
+<Row>
+  <Column size="8">
+    ![Creer le projet](_01-paiement/stripe3.jpg)
+  </Column>
+</Row>
 
 ### Récupérer les clés publique et privée
+- Les clés devrait être directement sur la page d'accueil
+<Row>
+  <Column size="8">
+    ![Creer le projet](_01-paiement/stripe4.jpg)
+  </Column>
+</Row>
 
 ### Créer un Sandbox et configurer le compte
+- Assurez-vous d'être dans un bac à sable (sandbox), sinon vous pouvez en créer un
+<Row>
+  <Column size="8">
+    ![Creer le projet](_01-paiement/stripe5.jpg)
+  </Column>
+</Row>
+- Ajuster les options de paiement
+<Row>
+  <Column size="8">
+    ![Creer le projet](_01-paiement/stripe6.jpg)
+  </Column>
+</Row>
+<Row>
+  <Column size="8">
+    ![Creer le projet](_01-paiement/stripe7.jpg)
+  </Column>
+</Row>
+<Row>
+  <Column size="8">
+    ![Creer le projet](_01-paiement/stripe8.jpg)
+  </Column>
+</Row>
+- Activez seulement Cartes, Cartes Bancaires, Apple Pay, Google Pay et désactivez toutes les autres options
+<Row>
+  <Column size="8">
+    ![Creer le projet](_01-paiement/stripe9.jpg)
+  </Column>
+</Row>
 
-- dans un navigateur ouvrir https://supabase.com/
-- si nécessaire, se créer un compte
-- se connecter
 
 ## Créer le code Serveur
 
@@ -97,4 +144,4 @@ string url = supabase
 
 ## Exemple de code
 
-Vous pouvez regarder l'exemple de code **[paiement_stripe](https://github.com/departement-info-cem/projet-prog/tree/main/code/paiement)**. -->
+Vous pouvez regarder l'exemple de code **[paiement_stripe](https://github.com/departement-info-cem/projet-prog/tree/main/code/paiement)**.
