@@ -1,4 +1,4 @@
-# Introduction aux IIFE (Immediately Invoked Function Expression) en JavaScript
+# Introduction aux IIFE (Immediately Invoked Function Expression) en JavaScript Pour Razor
 
 ## Qu'est-ce qu'une IIFE ?
 Une **IIFE** (*Immediately Invoked Function Expression*) est une fonction anonyme en JavaScript qui s'exécute immédiatement après sa définition. Elle est utilisée pour encapsuler du code et éviter la pollution de l’espace de noms global.
