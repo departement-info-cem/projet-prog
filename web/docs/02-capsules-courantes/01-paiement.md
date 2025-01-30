@@ -270,6 +270,10 @@ Sur votre Dashboard Stripe, vous pourrez suivre les paiements effectués
   </Column>
 </Row>
 
+## Cartes à utiliser
+
+Vous pouvez regarder les différentes cartes à utiliser **[documentation Stripe](https://docs.stripe.com/testing#cards)**.
+
 ## Exemple de code
 
 Vous pouvez regarder l'exemple de code **[paiement_stripe](https://github.com/departement-info-cem/projet-prog/tree/main/code/paiement_stripe)**.
