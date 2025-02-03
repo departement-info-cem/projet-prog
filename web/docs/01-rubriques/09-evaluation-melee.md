@@ -1,4 +1,4 @@
-# Évaluation du la mêlée
+# Évaluation de la mêlée
 
 - Il s'agit d'une évaluation individuelle et d'équipe
 - L'évaluation est faite par le coach d'équipe
