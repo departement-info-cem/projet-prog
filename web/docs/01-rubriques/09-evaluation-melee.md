@@ -5,4 +5,4 @@
 - Le coach d'équipe fera une évaluation formative pendant une mêlée du sprint 3
 - La correction sommative se fera sur une autre mêlée plus tard soit dans la fin du sprint 3 ou dans le sprint 4
 
-[Grille](_09-grilles/Grille-Melee.xlsx)
+Grille [(.xlsx)](_09-grilles/Grille-Melee.xlsx) [(.pdf)](_09-grilles/grille_melee.pdf)
