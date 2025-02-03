@@ -1,6 +1,6 @@
 # Évaluation du code côté serveur
 
-[Grille d'évaluation](_09-grilles/Grille-Code-Serveur.xlsx)
+Grille d'évaluation [(.xlsx)](_09-grilles/Grille-Code-Serveur.xlsx) [(.pdf)](_09-grilles/grille_serveur.pdf)
 
 - Évaluation individuelle
 - Pendant les sprints 1 2 3, il faut que tu t'assures de prendre une fonctionnalité client
@@ -16,7 +16,7 @@ Si ta note de formatif te convient et que tu ne penses pas reprendre ton code, l
 
 ## Évaluation formative
 
-- Quoi? la même fonctionnalité qu'au sommatif avec la [grille](_09-grilles/Grille-Code-Serveur.xlsx)
+- Quoi? la même fonctionnalité qu'au sommatif avec la [grille](_09-grilles/Grille-Code-Serveur.xlsx) [(pdf)](_09-grilles/grille_serveur.pdf)
 - Quand? quand tu as complété les modifications demandées au formatif, idéalement avant le jour des présentations
   finales. ABSOLUMENT avant de dernier jour de stage.
 - Combien? En général plus haut que ton formatif. La cible c'est 100% et du code digne d'un professionnel.
