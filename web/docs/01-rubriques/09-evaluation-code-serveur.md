@@ -8,7 +8,7 @@
 
 ## Évaluation formative
 
-- Quoi? le prof remplit la [grille](_09-grilles/Grille-Code-Serveur.xlsx) de correction et te revient avec des commentaires
+- Quoi? le prof remplit la [grille](_09-grilles/Grille-Code-Serveur.xlsx) de correction [(pdf)](_09-grilles/grille_serveur.pdf) et te revient avec des commentaires
 - Quand? dès que tu as complété une fonctionnalité client, tu peux demander la correction formative
 - Combien? le prof te donne une note globale sur 10. Tu peux avoir tout qui fonctionne mais une énorme faille de sécurité tu pourrais avoir en dessous de 60% quand même.
 
