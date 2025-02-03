@@ -1,6 +1,6 @@
 # Évaluation de la planification de sprint
 
-[Grille de correction](_09-grilles/Grille-Planification.xlsx)
+Grille de correction [(.xlsx)](_09-grilles/Grille-Planification.xlsx) [(.pdf)](_09-grilles/grille_planification.pdf)
 
 La planification de sprint a pour but de constituer un sprint avec le Product Owner:
 - en étant efficace
