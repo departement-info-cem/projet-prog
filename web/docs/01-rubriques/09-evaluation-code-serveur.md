@@ -1,6 +1,6 @@
 # Évaluation du code côté serveur
 
-Grille d'évaluation [(.xlsx)](_09-grilles/Grille-Code-Serveur.xlsx) [(.pdf)](_09-grilles/grille_serveur.pdf)
+Grille d'évaluation [(.xlsx)](_09-grilles/Grille-Code-Serveur.xlsx) [(.pdf)](_09-grilles/Grille-Code-Serveur.pdf)
 
 - Évaluation individuelle
 - Pendant les sprints 1 2 3, il faut que tu t'assures de prendre une fonctionnalité client
@@ -8,7 +8,7 @@ Grille d'évaluation [(.xlsx)](_09-grilles/Grille-Code-Serveur.xlsx) [(.pdf)](_0
 
 ## Évaluation formative
 
-- Quoi? le prof remplit la [grille](_09-grilles/Grille-Code-Serveur.xlsx) de correction [(pdf)](_09-grilles/grille_serveur.pdf) et te revient avec des commentaires
+- Quoi? le prof remplit la [grille](_09-grilles/Grille-Code-Serveur.xlsx) de correction [(pdf)](_09-grilles/Grille-Code-Serveur.pdf) et te revient avec des commentaires
 - Quand? dès que tu as complété une fonctionnalité client, tu peux demander la correction formative
 - Combien? le prof te donne une note globale sur 10. Tu peux avoir tout qui fonctionne mais une énorme faille de sécurité tu pourrais avoir en dessous de 60% quand même.
 
@@ -16,7 +16,7 @@ Si ta note de formatif te convient et que tu ne penses pas reprendre ton code, l
 
 ## Évaluation formative
 
-- Quoi? la même fonctionnalité qu'au sommatif avec la [grille](_09-grilles/Grille-Code-Serveur.xlsx) [(pdf)](_09-grilles/grille_serveur.pdf)
+- Quoi? la même fonctionnalité qu'au sommatif avec la [grille](_09-grilles/Grille-Code-Serveur.xlsx) [(pdf)](_09-grilles/Grille-Code-Serveur.pdf)
 - Quand? quand tu as complété les modifications demandées au formatif, idéalement avant le jour des présentations
   finales. ABSOLUMENT avant de dernier jour de stage.
 - Combien? En général plus haut que ton formatif. La cible c'est 100% et du code digne d'un professionnel.

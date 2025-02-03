@@ -7,4 +7,4 @@ Le but de la rétro: améliorer le fonctionnement interne de l'équipe
 - La correction formative se passera lors de la rétrospective du sprint 3
 - La correction sommative se passera lors de la rétrospective du sprint 4
 
-Grille de correction [(.xlsx)](_09-grilles/Grille-Retrospective.xlsx) [(.pdf)](_09-grilles/grille_retrospective.pdf)
+Grille de correction [(.xlsx)](_09-grilles/Grille-Retrospective.xlsx) [(.pdf)](_09-grilles//Grille-Retrospective.pdf)
