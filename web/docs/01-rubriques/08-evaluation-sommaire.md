@@ -23,5 +23,5 @@ Le coach d'équipe évalue les cérémonies SCRUM pendant les sprints 3 et 4:
 ## Évaluation de fin de projet
 
 En fin de projet le **Product Owner** va évaluer le résultat final après les 5 sprints:
-- [Évaluation des fonctionnalités](09-evaluation-fonctionnalites.md)
-- [Évaluation des présentations](09-evaluation-présentation.md)
+- Évaluation des fonctionnalités
+- Évaluation des présentations
