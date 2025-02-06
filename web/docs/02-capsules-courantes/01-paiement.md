@@ -177,7 +177,7 @@ Toutefois, ce n'est pas nécessaire pour être capable d'effecturer des paiement
 
 ### Installer le package pub.dev
 ```shell title="Ajouter flutter_stripe"
-flutter pud add flutter_stripe
+flutter pub add flutter_stripe
 ```
 
 ### Configurer le projet Android
