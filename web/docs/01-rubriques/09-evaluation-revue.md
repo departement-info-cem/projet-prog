@@ -8,4 +8,4 @@ décrire honnêtement ce qui n'est pas fini et les raisons.
 - La correction formative se passera lors de la revue du sprint 3
 - La correction sommative se passera lors de la revue du sprint 4
 
-Grille de correction [(.xlsx)](_09-grilles/Grille-Revue.xlsx) [(.pdf)](_09-grilles/Grille-Revue.pdf)
+[Grille de correction](_09-grilles/Grille-Revue.xlsx)

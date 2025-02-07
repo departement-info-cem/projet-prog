@@ -7,7 +7,7 @@
 
 ## Évaluation formative
 
-- Quoi? le prof remplit la [grille](_09-grilles/Grille-Code-Client.xlsx) de correction [(pdf)](_09-grilles/Grille-Code-Client.pdf) et te revient avec des commentaires
+- Quoi? le prof remplit la [grille](_09-grilles/Grille-Code-Client.xlsx) de correction et te revient avec des commentaires
 - Quand? dès que tu as complété une fonctionnalité client, tu peux demander la correction formative
 - Combien? le prof te donne une note globale sur 10. Tu peux avoir tout qui fonctionne mais une énorme faille de sécurité tu pourrais avoir en dessous de 60% quand même.
 
@@ -15,7 +15,7 @@ Si ta note de formatif te convient et que tu ne penses pas reprendre ton code, l
 
 ## Évaluation formative
 
-- Quoi? la même fonctionnalité qu'au sommatif avec la même [grille](_09-grilles/Grille-Code-Client.xlsx) [(pdf)](_09-grilles/Grille-Code-Client.pdf)
+- Quoi? la même fonctionnalité qu'au sommatif avec la même [grille](_09-grilles/Grille-Code-Client.xlsx)
 - Quand? quand tu as complété les modifications demandées au formatif, idéalement avant le jour des présentations
 finales. ABSOLUMENT avant de dernier jour de stage.
 - Combien? En général plus haut que ton formatif. La cible c'est 100% et du code digne d'un professionnel.
