@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1047416359975",
+    "project_id": "demonotifications-8fc76",
+    "storage_bucket": "demonotifications-8fc76.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047416359975:android:4418b59bf46876be97d202",
+        "android_client_info": {
+          "package_name": "org.depinfo.demo_notification"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQ-6q6OOYQ7BS9omLsVA-j_W8qrSpVCHc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
