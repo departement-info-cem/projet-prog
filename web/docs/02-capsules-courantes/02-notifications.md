@@ -4,10 +4,6 @@ Démonstration du fonctionnement des notifications avec Flutter, Firebase et .Ne
 
 Attention, 2 projets ne fonctionnent pas par défaut. Il faut réaliser les étapes de configuration ci-bas.
 
-## Code de la démonstration
-
-[DemoNotification](https://github.com/departement-info-cem/projet-prog/tree/main/code/DemoNotifications)
-
 ## Configurer flutterfire
 
 Suivez les étapes suivantes pour configurer flutterfire dans votre projet, si ce n'est pas déjà
@@ -48,6 +44,10 @@ fonctionne l'envoi de notifications.
 La partie la plus complexe est la gestion de l'état dans lequel votre application se trouve lorsqu'
 une notification est reçue. Vous devez gérer les cas où l'application est en arrière-plan, en premier
 plan, et fermée.
+
+## Démonstration
+
+Code de la démonstration : [DemoNotification](https://github.com/departement-info-cem/projet-prog/tree/main/code/DemoNotifications)
 
 ## Documentation à lire
 
