@@ -5,11 +5,11 @@ part 'order_request.g.dart';
 @JsonSerializable()
 class OrderRequest {
   OrderRequest({
-    required this.OrderContent,
+    required this.orderContent,
     required this.deviceToken,
   });
 
-  String OrderContent;
+  String orderContent;
   String deviceToken;
 
   factory OrderRequest.fromJson(Map<String, dynamic> json) =>

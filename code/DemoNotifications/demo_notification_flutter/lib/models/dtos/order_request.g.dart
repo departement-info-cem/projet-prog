@@ -7,12 +7,12 @@ part of 'order_request.dart';
 // **************************************************************************
 
 OrderRequest _$OrderRequestFromJson(Map<String, dynamic> json) => OrderRequest(
-      OrderContent: json['OrderContent'] as String,
+      orderContent: json['orderContent'] as String,
       deviceToken: json['deviceToken'] as String,
     );
 
 Map<String, dynamic> _$OrderRequestToJson(OrderRequest instance) =>
     <String, dynamic>{
-      'OrderContent': instance.OrderContent,
+      'orderContent': instance.orderContent,
       'deviceToken': instance.deviceToken,
     };

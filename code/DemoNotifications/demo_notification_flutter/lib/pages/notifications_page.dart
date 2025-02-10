@@ -23,7 +23,7 @@ class _NotificationsPageState extends State<NotificationsPage> {
     String? token = await FirebaseMessaging.instance.getToken();
     String orderContent = orderContentController.text;
 
-    OrderRequest request = OrderRequest(OrderContent: orderContent, deviceToken: token!);
+    OrderRequest request = OrderRequest(orderContent: orderContent, deviceToken: token!);
     try {
       // TODO #3 : Envoyer la commande au serveur.
       // Le serveur va attendre 5 secondes, puis va envoyer une notification

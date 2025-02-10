@@ -2,7 +2,9 @@
 
 Démonstration du fonctionnement des notifications avec Flutter, Firebase et .Net Core.
 
-Attention, 2 projets ne fonctionnent pas par défaut. Il faut réaliser les étapes de configuration ci-bas.
+Attention, les 2 projets ne fonctionnent pas par défaut. Il faut réaliser les étapes de configuration ci-bas.
+
+<Video url="https://youtu.be/rUWRijgkx14" />
 
 ## Configurer flutterfire
 

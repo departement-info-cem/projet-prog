@@ -21,8 +21,6 @@ public class NotificationController : Controller
             {
                 Title = "Commande acceptée.",
                 Body = $"{orderRequest.OrderContent} est en cours de préparation.",
-                // On utilise l'adresse IP de l'émulateur Android, mais normalement on devrait utiliser une adresse publique.
-                // ImageUrl = "http://10.0.2.2:5263/Images/ok.png"
             },
             // Donnnées qui n'apparaitront pas dans la notification, mais qui seront accessibles dans l'application mobile.
             Data = new Dictionary<string, string>
