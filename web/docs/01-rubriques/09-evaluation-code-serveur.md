@@ -14,7 +14,7 @@
 
 Si ta note de formatif te convient et que tu ne penses pas reprendre ton code, la note deviendra finale.
 
-## Évaluation formative
+## Évaluation sommative
 
 - Quoi? la même fonctionnalité qu'au sommatif avec la [grille](_09-grilles/Grille-Code-Serveur.xlsx)
 - Quand? quand tu as complété les modifications demandées au formatif, idéalement avant le jour des présentations

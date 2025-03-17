@@ -13,9 +13,39 @@
 
 Si ta note de formatif te convient et que tu ne penses pas reprendre ton code, la note deviendra finale.
 
-## Évaluation formative
+## Évaluation sommative
 
 - Quoi? la même fonctionnalité qu'au sommatif avec la même [grille](_09-grilles/Grille-Code-Client.xlsx)
 - Quand? quand tu as complété les modifications demandées au formatif, idéalement avant le jour des présentations
 finales. ABSOLUMENT avant de dernier jour de stage.
 - Combien? En général plus haut que ton formatif. La cible c'est 100% et du code digne d'un professionnel.
+
+## Grille d'évaluation
+
+
+| **Correction Client**                                                        |                    |
+| ---------------------------------------------------------------------------- | ------------------ |
+| Fonctionnalité choisie: ____________________________________________         |  **Commentaires**  |
+| **Découplage vue code**                                                      |                    |
+| Le code logique n'est pas mélangé avec le code de l'interface                |                    |
+| Les éléments visuels sont réutilisés                                         |                    |
+| **Structure du projet client**                                               |                    |
+| Appels HTTP regroupés (service)                                              |                    |
+| Structure et noms homogènes et standards                                     |                    |
+| Réutilisation du code (pas de copié-collé)                                   |                    |
+| Lisibilité du code (1 fonction < 1 page, etc.)                               |                    |
+| **Stabilité**                                                                |                    |
+| Crash application                                                            |                    |
+| Validation des données                                                       |                    |
+| Ne pas multiplier inutilement les requêtes HTTP                              |                    |
+| Données du client toujours à jour avec les données de la BD                  |                    |
+| **Sécurité**                                                                 |                    |
+| Gestion des tokens (ou cookies)                                              |                    |
+| Utilisation des APIs externes (Firebase/ Supabase/ etc.)                     |                    |
+| Autre                                                                        |                    |
+| **Interface utilisateur**                                                    |                    |
+| Utilisation de la nomenclature du glossaire                                  |                    |
+| Messages d'erreur (indique clairement une solution à l'utilisateur)          |                    |
+| Indicateurs d'attente                                                        |                    |
+| Traductions anglais et français (champs de la page / messages d'erreur)      |                    |
+| **Total**                                                                    | /10                |
