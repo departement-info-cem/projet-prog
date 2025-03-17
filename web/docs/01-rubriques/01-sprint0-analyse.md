@@ -82,7 +82,7 @@
 
 ## Biens livrables
 
-### Gestion de projet1
+### Gestion de projet
 
 #### Horaire :
 
@@ -109,6 +109,18 @@
   - Modèle : Sprint0 - Communications et Roles.xlsx
   - Remise dans les dossiers Teams de votre équipe
 
+### Description du produit
+
+- À faire :
+  - Quel est le MVP au niveau des fonctionnalités à votre avis?
+  - Création des Épics - Quels sont les gros morceaux du projet (ex. Puzzle, Pièces, Jeu,…)
+  - Définition du besoin 
+    - À qui s’adresse le produit
+    - Description du produit comme si on voulait le vendre à quelqu’un. Principalement, c’est quoi le différenciateur.
+    - Détailler sommairement l’idée derrière l’application et pourquoi on en a de besoin (Énoncé du besoin).
+- Remise
+  - Vous devez publier l’information dans votre **Wiki de votre projet Azure DevOps**
+
 ### Glossaire
 
 - Utilisez le glossaire d’un projet pour standardiser la nomenclature
@@ -120,6 +132,16 @@
 - Remise
   - Modèle : Sprint0 - Modèle Glossaire.xlsx
   - Vous devez publier l’information dans votre Wiki de votre projet Azure DevOps
+
+### Backlog de produit
+
+- À préparer étroitement avec le product owner à partir de la vision du product owner
+- Identifier les fonctionnalités
+- Préparer les récits utilisateurs (US) du Sprint 1
+- Formulation des récits : En tant que …, je veux …. afin de …
+- Priorisation des récits pour le sprint 1 et 2
+- Remise
+  - Vous devez publier l’information dans votre **Wiki de votre projet Azure DevOps**
 
 ### Les Standards de programmation et interfaces
 
@@ -136,74 +158,18 @@
 - La définition de terminé est importante dans votre processus afin d’assurer la qualité du produit final. En équipe, rencontrez-vous et discutez-en.
 - Définir le terme terminé
   - Terminé pour une user story
-  - Terminé pour un sprint
-  - Terminé pour un release
 - Remise
   - Modèle : Sprint0 - Définition terminé.docx
   - Vous devez publier l’information dans votre Wiki de votre projet Azure DevOps
 
 ### Architecture et Design
 
-- Produire un **diagramme de composants**
-  - Un diagramme de composants a pour objectif d'illustrer la relation entre les différents composants d'un système.
-  - Le terme « composant » fait référence à un module de classes qui représentent des systèmes ou des sous-systèmes indépendants ayant la capacité de s'interfacer avec le reste du système.
-    - [Qu'est-ce qu'un diagramme de composants UML | Lucidchart](https://www.lucidchart.com/pages/fr/diagramme-de-composants-uml)
-  - [Exemple de diagramme de composants PlantUML](https://plantuml.com/fr/component-diagram)
-- Produire **diagramme d'entité-relation**
-  - Un diagramme d’entité-relation est une représentation graphique des données d'un système, montrant les **entités**, leurs **attributs**, et les **relations** entre elles pour modéliser une base de données.
-  - Rappel du standard:
-    - On aura comme objectif d’être le plus générique possible afin d’être le plus adaptatif au changement possible. La modélisation doit suivre les principes POO que nous avons vus en classe.
-    - Est-ce que vous aurez une application unilingue ?
-- Produire **diagramme de classe**
-  - Un diagramme de classes a pour objectif de représenter la structure statique d'un système. Il montre les **classes**, leurs **attributs**, leurs **méthodes** et les **relations** (comme l'héritage, l'association, la composition, ou l'agrégation) entre elles.
-  - Rappel du standard:
-    - Classes : Représenter sous forme de rectangles divisés en trois parties (nom, attributs, méthodes).
-    - Relations :
-      - Héritage (flèche pleine avec un triangle vide).
-      - Association (ligne simple, éventuellement annotée).
-      - Composition (losange noir rempli).
-      - Agrégation (losange vide).
-    - Visibilité des membres : Public (+), privé (-), ou protégé (#).
+- Produire un **diagramme de classe conceptuel**
+  - Contient les composantes qui seront dans le MVP
+  - TODO À préciser
 - De plus, précisez le choix d’architecture (ex : MVC) et justifiez le.
 - Décision sur le framework de codification et mise en place
 - Décision sur IDE et outils
 - Framework de test prêt
 - Remise
   - Vous devez publier l’information dans votre **Wiki de votre projet Azure DevOps**
-
-### Description du produit
-
-- Détailler la Position du produit
-  - À qui s’adresse le produit
-  - Description du produit comme si on voulait le vendre à quelqu’un. Principalement, c’est quoi le différenciateur.
-  - Détailler sommairement l’idée derrière l’application et pourquoi on en a de besoin (Énoncé du besoin).
-- Concepts fondamentaux - Quels sont les gros morceaux du projet (ex. Puzzle, Pièces, Jeu,…)
-- Quel est le MVP au niveau des fonctionnalités à votre avis?
-- Remise
-  - Vous devez publier l’information dans votre **Wiki de votre projet Azure DevOps**
-
-### Backlog de produit
-
-- À préparer étroitement avec le product owner à partir de la vision du product owner
-- Identifier les fonctionnalités
-- Préparer les récits utilisateurs (US) du Sprint 1
-- Formulation des récits : En tant que …, je veux …. afin de …
-- Priorisation des récits pour le sprint 1 et 2
-- Remise
-  - Vous devez publier l’information dans votre **Wiki de votre projet Azure DevOps**
-
-### Environnement de travail
-
-- Tableau et post-it
-- Kit de papeterie
-- Ergonomie
-- Définition de terminé bien en vue
-
-### Infrastructure
-
-- Logiciels, licences, environnement, etc.
-- Réseau
-- Connectivité
-- Environnement développement, test
-- Logistique : téléphone, vidéo-conférence
-- Outils fonctionnels

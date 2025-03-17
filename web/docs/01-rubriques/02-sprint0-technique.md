@@ -17,13 +17,21 @@ Pendant le sprint 0, vous allez:
 Chaque cérémonie est une version miniature de la vraie cérémonie. Toutefois cela vous permet
 de se remémorer les étapes sur une fonctionnalité qui ne compte pas.
 
-### Git
+## Architecture
+
+- Choisir une architecture parmi les suivantes :
+
+TODO : Faire des diagrammes des différents architectures proposées
+
+- Valider l'architecture de votre application avec le coach d'équipe et / ou les coach technique.
+
+## Git
 
 - Un Github Classroom a été créé par l'équipe d'enseignants. Demandez leur de vous y ajouter et de vous expliquer comment le rejoindre.
 - Assurez vous que tous les membres de l'équipe ont accès à tous les repos
 - Assurez vous que tous les coach techniques ainsi que votre coach d'équipe ont accès à tous les repos
 
-### Backend
+## Backend
 
 - Application .NET créée avec projets MVC, WebAPI, et Models.
 - Application ajoutée dans le repo GitHub.
@@ -45,7 +53,7 @@ de se remémorer les étapes sur une fonctionnalité qui ne compte pas.
 Visual Studio ne créé pas de `.gitignore` par défaut. Assurez vous d'avoir ajouté le `.gitignore` avant d'effectuer le premier commit. Voici un bon [.gitignore](https://raw.githubusercontent.com/github/gitignore/refs/heads/main/VisualStudio.gitignore).
 :::
 
-### Frontend (Angular et Flutter)
+## Frontend (Angular et Flutter)
 
 - Applications créée
 - Applicationa ajoutée dans le repo GitHub.
