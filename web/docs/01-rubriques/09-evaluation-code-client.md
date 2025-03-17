@@ -26,26 +26,26 @@ finales. ABSOLUMENT avant de dernier jour de stage.
 | **Correction Client**                                                        |                    |
 | ---------------------------------------------------------------------------- | ------------------ |
 | Fonctionnalité choisie: ____________________________________________         |  **Commentaires**  |
-| **Découplage vue code**                                                      |                    |
+| <center>**Découplage vue code**</center>                                     |                    |
 | Le code logique n'est pas mélangé avec le code de l'interface                |                    |
 | Les éléments visuels sont réutilisés                                         |                    |
-| **Structure du projet client**                                               |                    |
+| <center>**Structure du projet client**</center>                              |                    |
 | Appels HTTP regroupés (service)                                              |                    |
 | Structure et noms homogènes et standards                                     |                    |
 | Réutilisation du code (pas de copié-collé)                                   |                    |
 | Lisibilité du code (1 fonction < 1 page, etc.)                               |                    |
-| **Stabilité**                                                                |                    |
+| <center>**Stabilité**</center>                                               |                    |
 | Crash application                                                            |                    |
 | Validation des données                                                       |                    |
 | Ne pas multiplier inutilement les requêtes HTTP                              |                    |
 | Données du client toujours à jour avec les données de la BD                  |                    |
-| **Sécurité**                                                                 |                    |
+| <center>**Sécurité**</center>                                                |                    |
 | Gestion des tokens (ou cookies)                                              |                    |
 | Utilisation des APIs externes (Firebase/ Supabase/ etc.)                     |                    |
 | Autre                                                                        |                    |
-| **Interface utilisateur**                                                    |                    |
+| <center>**Interface utilisateur**</center>                                   |                    |
 | Utilisation de la nomenclature du glossaire                                  |                    |
 | Messages d'erreur (indique clairement une solution à l'utilisateur)          |                    |
 | Indicateurs d'attente                                                        |                    |
 | Traductions anglais et français (champs de la page / messages d'erreur)      |                    |
-| **Total**                                                                    | /10                |
+| <center>**Total**</center>                                                   | /10                |
