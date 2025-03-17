@@ -21,31 +21,3 @@ Bienvenue dans le projet de prog! Bonne chance!
 À la toute fin du projet, nous organisons une retrospective de projet / programme
 
 Clique **[ici pour voir le sommaire des évaluations](rubriques/evaluation-sommaire)** .
-
-<Row>
-
-<Column>
-
-
-| **Les Rubriques**                                      |
-| ----------------------------------------------------- |
-| [1.1 → Sprint 0 - Analyse](rubriques/sprint0-analyse)      |
-| [1.2 → Sprint 0 - Technique](rubriques/sprint0-technique)   |
-| [1.3 → Utiliser PostgreSQL et Supabase](rubriques/supabase)   |
-
-</Column>
-
-
-<Column>
-
-
-
-| **Les Capsules**                                      |
-| ----------------------------------------------------- |
-| [1.1 → Paiement avec Stripe](capsules-courantes/paiement)      |
-| [1.2 → Notifications Push](capsules-courantes/notifications)   |
-
-</Column>
-
-</Row>
-
