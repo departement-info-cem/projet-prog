@@ -47,7 +47,7 @@ dotnet new gitignore
 - Le repo doit avoir :
   - Une branche pour le développement (dev par exemple)
   - Une branche pour les releases (main par exemple)
-  - La base de données doit être en SQLite
+  - La base de données doit être en Postgresql
 - Authentification (login / register) à l'aide d'Identity fonctionnel en MVC et en WebAPI.
 - Swagger fonctionne les tokens d'authentification.
 - Une action WebAPI ayant les spécifications suivantes :
