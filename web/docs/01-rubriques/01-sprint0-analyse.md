@@ -28,6 +28,8 @@ Le projet suit la méthodologie Agile SCRUM.
     * **Rétrospective de sprint :** À faire entre vous (Inspect & Adapt).
     * **Livraison :** Nécessaire 3 heures avant la revue, même si l'itération n'est pas complétée à 100%.
 
+![Schéma du processus Agile](01-planif/resume-scrum.png)
+
 ### Rôles Agile dans votre équipe
 À chaque sprint (1 à 5), vous devrez choisir un membre différent de votre équipe qui prendra les rôles suivants (tout en restant développeur à temps plein) :
 * Scrum Master
