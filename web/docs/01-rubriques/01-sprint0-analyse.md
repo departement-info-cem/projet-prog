@@ -15,16 +15,16 @@ Le projet suit la méthodologie Agile SCRUM.
 * Suivre les processus Agile Scrum.
 * Vous impliquer dans les rencontres.
 * Ne pas perdre de vue l'objectif des rencontres, des itérations, du projet !
-* Itération (Sprint) d'une durée d'une semaine (Sprint 0 à 5).
+* Itération (Sprint) d'une durée d'une semaine (Sprint 1 à 5).
 
 ### Le Cycle Scrum (Résumé)
 * **Préparation du projet :** Document de Vision, Backlog produit initial, Architecture.
 * **Sprint 1 à 5 :**
-    * **Grooming :** Lundi (20 min / 2 analystes / équipe).
-    * **Planification de sprint :** Mardi-Mercredi.
+    * **Grooming :** Lundi / Mardi selon le PO.
+    * **Planification de sprint :** .Mercredi-Jeudi
     * **Mêlée quotidienne (Daily) :** Chaque jour à heure fixe.
     * **Exécution du Sprint.**
-    * **Revue de sprint :** Mardi-Mercredi (itération de la semaine passée).
+    * **Revue de sprint :** Mercredi-Jeudi (itération de la semaine passée).
     * **Rétrospective de sprint :** À faire entre vous (Inspect & Adapt).
     * **Livraison :** Nécessaire 3 heures avant la revue, même si l'itération n'est pas complétée à 100%.
 
