@@ -35,7 +35,7 @@ TODO : Faire des diagrammes des différents architectures proposées
 
 - Application .NET créée avec projets MVC, WebAPI, et Models.
 :::danger ⚠️ ‼️ ☢️
-Assurez vous de créer une saeule application .NET avec tous projets (MVC, WebAPI, Models). **Ne faites pas 3 applications séparées**!!!
+Assurez vous de créer une seule application .NET avec tous projets (MVC, WebAPI, Models). **Ne faites pas 3 applications séparées**!!!
 :::
 - Application ajoutée dans le repo GitHub.
   - **.gitignore créé** : Aucun fichier compilé dans le repo.
