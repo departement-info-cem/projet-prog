@@ -1,175 +1,160 @@
-# Sprint 0 - Analyse
+# Planification initiale
 
-## But sprint 0
+## 1. Processus
+### Processus Agile Scrum du projet
 
-### Mettre en place l’environnement afin :
+Le projet suit la méthodologie Agile SCRUM.
 
-- de préparer ce qui est nécessaire à la réalisation du projet
-- d'obtenir tous les prérequis pour la planification du premier sprint et que le sprint 1 soit possible ainsi que les sprints suivants
-- de clarifier :
-  - la forme du projet **QUOI** fonctionnalités - valeur
-  - le but **POURQUOI** perspective utilisateur
-  - les implémentations possibles **COMMENT** technologie
+**Les 4 Valeurs du manifeste Agile :**
+1.  **Les individus et leurs interactions** plus que les processus et les outils.
+2.  **Du logiciel qui fonctionne** plus qu'une documentation exhaustive.
+3.  **La collaboration avec les clients** plus que la négociation contractuelle.
+4.  **L'adaptation au changement** plus que le suivi d'un plan.
 
-### Obstacles de départ à la mise en place
+**Application dans le cours :**
+* Suivre les processus Agile Scrum.
+* Vous impliquer dans les rencontres.
+* Ne pas perdre de vue l'objectif des rencontres, des itérations, du projet !
+* Itération (Sprint) d'une durée d'une semaine (Sprint 1 à 5).
 
-- Connaissance des membres de l’équipe
-- L'analyste d’affaires ne connaît pas le domaine d’affaires très bien ou encore très peu
-- L'équipe hérite de contraintes matérielles, logicielles
+### Le Cycle Scrum (Résumé)
+* **Préparation du projet :** Document de Vision, Backlog produit initial, Architecture.
+* **Sprint 1 à 5 :**
+    * **Grooming :** Lundi / Mardi selon le PO.
+    * **Planification de sprint :** .Mercredi-Jeudi
+    * **Mêlée quotidienne (Daily) :** Chaque jour à heure fixe.
+    * **Exécution du Sprint.**
+    * **Revue de sprint :** Mercredi-Jeudi (itération de la semaine passée).
+    * **Rétrospective de sprint :** À faire entre vous (Inspect & Adapt).
+    * **Livraison :** Nécessaire 3 heures avant la revue, même si l'itération n'est pas complétée à 100%.
 
-### Pré-requis pour la planification d’un sprint (1 à 5) en rappel
+![Schéma du processus Agile](01-planif/resume-scrum.png)
 
-- Un backlog de produit priorisé
-- Avoir groomer les US les plus prioritaires, donc avoir suffisamment de connaissances du domaine d’affaires et du domaine technique afin de pouvoir estimer le temps correctement.
+### Rôles Agile dans votre équipe
+À chaque sprint (1 à 5), vous devrez choisir un membre différent de votre équipe qui prendra les rôles suivants (tout en restant développeur à temps plein) :
+* Scrum Master
+* Analyste d'affaire
+* Assurance Qualité (QA)
 
-## Équipe
+> **Note :** Vous devrez vous partager également les présentations (Revue, Release, etc.).
 
-- Product owner : Responsable du produit
-- Scrum master : Facilitateur SCRUM
-- Analyste d’affaires : Rédige les US et participe au grooming
-- Développeur : Participe au développement selon les standards
-- Assurance qualité : Organisation technique de l’application
+---
 
-## Organisation
+## 2. Le manifeste des Tests
 
-### Analyse préliminaire et préparation du sprint 1
+Nous valorisons :
+* **Tester au fil de l'eau** PLUS QUE Tester à la fin.
+* **Éviter les bugs** PLUS QUE Trouver les bugs.
+* **Tester la bonne compréhension** PLUS QUE Vérifier la fonctionnalité.
+* **Construire le meilleur système** PLUS QUE Casser le système.
+* **La responsabilité de l'équipe sur la qualité** PLUS QUE La responsabilité du testeur.
 
-- Présentation du client/PO : Prendre des notes et les mettre en commun.
-  - S’assurer que l’équipe a compris la même chose
-  - Clarifier certains points avec le PO
-  - Faciliter/compléter l’analyse textuelle
-- Analyse textuelle des documents du PO
-  - Identifier les concepts fondamentaux potentiels
-  - Acquérir le vocabulaire du client, démarrer le glossaire !
-  - Même terme et définition pour tous
-  - Éviter les erreurs de synonymes
-- Faire un premier découpage du travail à faire
-  - Définir les priorités
-  - Identifier les acteurs
-  - Identifier les systèmes extérieurs
-  - Déterminer les fonctionnalités
-  - Démarrage du backlog pour écrire les fonctionnalités / User stories
-- Déterminer les acteurs et leurs interactions avec l’application en développement
-  - Déterminer le En tant que des US
-  - Aider à écrire le **QUOI** et **POURQUOI** des US
-  - S’assurer de ne pas oublier de fonctionnalité
-- Déterminer en équipe
-  - Définition de terminé
-  - Architecture choisie
-  - Les Standards de programmation et interfaces
-  - Définition de l’horaire de travail
-  - Définition des rôles de chacun
-  - Coordonnées partagées
-  - Un plan agile décrivant l’organisation de votre travail et la compréhension du projet.
-  - Un plan de test
-- Produire les biens livrables du document de vision et de gestion du projet
+> *Pensez également aux jeux de données !*
 
-### Initialisation du projet (tests des environnements)
+### La Dette Technique
+Il faut éviter la dette technique pour garder une bonne vélocité ("Bien faire dès le début").
 
-- Sprint 0.1 Réunion de planification du sprint 0
-  - Une session de création du backlog de produit du projet (bac à sable) avec
-    - Le client, si disponible
-    - Le Product Owner (représentant le client pour nous)
-    - Le coach équipe
-  - Liste des activités avec estimation (pour le Hello World)
-  - Identification du Scrum Master
-- Sprint 0.2 Réalisation des activités
-  - Définition de l’architecture (choix imposés par les enseignants, le comprendre, le choisir)
-  - Faire la mêlée, se distribuer les tâches répondant aux récits utilisateurs
-  - Simulation d’un sprint – codification, test, déploiement
-- Sprint 0.3 Acceptation par le PO (si disponible)
-  - Revue, Rétrospective.
+**Types de dette :**
+* **Irréfléchie / Intentionnelle :** "Nous n'avons pas le temps pour la conception".
+* **Prudente / Intentionnelle :** "Nous devons déployer maintenant et assumer les conséquences".
+* **Irréfléchie / Involontaire :** "Qu'est-ce que la structuration en couches ?".
+* **Prudente / Involontaire :** "Maintenant nous savons comment nous aurions dû le faire".
 
-## Biens livrables
+---
 
-### Gestion de projet
+## 3. Analyse du projet (Exigences)
 
-#### Horaire :
+### Livrables d'analyse et Outils
+Les documents et suivis se font via **Teams** et **Azure DevOps**.
 
-- Heures de travail
-- Heure de mêlée
-- Activités SCRUM : heure à déterminer à chaque semaine dans l’agenda
-  - Revue de sprint : journée
-  - Planification de sprint : journée
-  - Rétrospective de sprint : journée
-- Remise
-  - Modèle : Sprint0 - Communications et Roles.xlsx
-  - Remise dans les dossiers Teams de votre équipe
+**Documents requis (Wiki / Fichiers) :**
+> Gestion de projet 
+* Communication et  Rôles
+> Préparation du projet (Vision)
+* Énoncé du problème
+* Les Utilisateurs Cibles (Acteurs Clés)
+* MVP
+* Choix technologique
+* Diagramme de classe
+* Standards programmation
+* Maquettes
+* Définition de terminé
 
-#### Rôles :
+**Utilisation d'Azure DevOps :**
+* **Wiki :** Standards, Document de vision, Architecture, Glossaire.
+* **Boards :** Backlog Produit / Sprint (Priorisé, estimé, assigné), Tests fonctionnels.
 
-- Communication
-  - Inscrire les coordonnées de chaque membre
-  - Horaire du travail de l’équipe
-- Rôles à attribuer pour chaque Sprint (1 à 5)
-  - Scrum master
-  - Analyste d’affaires
-  - Assurance Qualité
-- Remise
-  - Modèle : Sprint0 - Communications et Roles.xlsx
-  - Remise dans les dossiers Teams de votre équipe
+### Évaluation du processus
+L'évaluation se base sur des grilles (Formatives et Sommatives) couvrant :
+* **Cérémonies :** Mêlée, Planification, Revue, Rétro.
+* **Organisation :** Utilisation des outils, pas de distractions.
+* **Attitude :** Respect, écoute, participation active.
+* **Contenu :** Améliorations identifiées, qualité du français, pertinence.
 
-### Description du produit
+**Points clés de vérification :**
+* *Avant la planification :* US triées par priorité, pré-estimées, détaillées avec conditions de satisfaction.
+* *Pendant la planification :* Définition du but du sprint.
+* *Après la planification :* Découpage en sous-tâches, vérification de la vélocité.
+* *Revue de sprint :* Application déployée 3h avant, scénario de présentation clair, jeux de données pertinents.
 
-- À faire :
-  - Quel est le MVP au niveau des fonctionnalités à votre avis?
-  - Création des Épics - Quels sont les gros morceaux du projet (ex. Puzzle, Pièces, Jeu,…)
-  - Définition du besoin 
-    - À qui s’adresse le produit
-    - Description du produit comme si on voulait le vendre à quelqu’un. Principalement, c’est quoi le différenciateur.
-    - Détailler sommairement l’idée derrière l’application et pourquoi on en a de besoin (Énoncé du besoin).
-- Remise
-  - Vous devez publier l’information dans votre **Wiki de votre projet Azure DevOps**
+---
 
-### Glossaire
+## 4. Planification initiale
 
-- Utilisez le glossaire d’un projet pour standardiser la nomenclature
-  - De vos Récit Utilisateur
-  - De votre code/commentaire
-  - Description de projet, diagramme, …
-  - Dans vos discussions avec votre PO
-- Le glossaire va évoluer avec le temps également, il faut donc le mettre à jour tout au long du projet. On vérifie que vos classes correspondent au glossaire.
-- Remise
-  - Modèle : Sprint0 - Modèle Glossaire.xlsx
-  - Vous devez publier l’information dans votre Wiki de votre projet Azure DevOps
+### Préparation du premier Sprint
 
-### Backlog de produit
+| Aspect | Description |
+| :--- | :--- |
+| **But** | Aligner l'équipe (outils, standards, méthodes, rôles). Clarifier la forme du projet, le but et les implantations possibles (Quoi/Pourquoi/Comment). |
+| **Durée** | Pour notre projet : ~ 2 jours. |
+| **Résultat** | Réalisation d'un "Hello World". Environnements prêts. Déploiements fonctionnels. Architecture haut niveau. Backlog produit commencé et priorisé. |
 
-- À préparer étroitement avec le product owner à partir de la vision du product owner
-- Identifier les fonctionnalités
-- Préparer les récits utilisateurs (US) du Sprint 1
-- Formulation des récits : En tant que …, je veux …. afin de …
-- Priorisation des récits pour le sprint 1 et 2
-- Remise
-  - Vous devez publier l’information dans votre **Wiki de votre projet Azure DevOps**
+### Analyse préliminaire
 
-### Les Standards de programmation et interfaces
+| Étape | Action | Bien livrable | Pourquoi? |
+| :--- | :--- | :--- | :--- |
+| **1** | **Présentation du client/PO** | Description projet, Notes communes | S'assurer que l'équipe a la même compréhension. Clarifier les points avec le PO. |
+| **2** | **Analyse textuelle** | Document de vision | Identifier les concepts fondamentaux. Acquérir le vocabulaire. Éviter les erreurs de synonymes.|
+| **3** | **Démarrage du backlog** | Fonctionnalités / User Stories | Identifier les acteurs et les systèmes extérieurs. Déterminer les fonctionnalités. |
+| **4** | **Déterminer les acteurs** | Acteurs et rôles, Diagramme d'architecture | Déterminer le "En tant que" des US. Aider à écrire le QUOI et POURQUOI. |
+| **5** | **Raffiner le découpage** | Backlog de produit | Prioriser le travail. Déterminer les US à raffiner. |
+| **6** | **Raffiner les US prioritaires** | MVP (Minimum Viable Product) | S'entendre sur les règles d'affaires. Faire la planification de sprint. |
 
-- Les standards de programmation sont des règles que les développeurs d’un logiciel doivent respecter dans le formatage visuel du code et du produit. En équipe, rencontrez-vous et discutez-en.
-- Les standards sont des éléments qui seront appliqués en tout temps. La limite à l’exercice de définir les standards d’un projet est la patience de l’équipe !
-- Les standards de programmation
-- Les standards des interfaces
-- Remise
-  - Modèle : Sprint0 - Standards - Exemple.docx
-  - Vous devez publier l’information dans votre Wiki de votre projet Azure DevOps
+### Les biens livrables de la planification initiale (Checklist)
 
-### Définition de terminé
+* [ ] **Installation physique :** Voir `Planification initiale - Technique et Infrastructure - Checklist.docx`
+* [ ] **Rôles :** Membres des équipes Sprint 1 assignés.
+* [ ] **Standards :** Définis.
+* [ ] **Définition de terminé (DoD) :** Définie.
+* [ ] **Backlog :** Fonctionnalités principales définies, Récits utilisateurs prioritaires rédigés.
+* [ ] **Technique :** Application déployée fonctionnelle ("Hello World").
+* [ ] **Documentation :**   * Voir `Planification initiale - Analyse et Conception - Cheklist.docx`
 
-- La définition de terminé est importante dans votre processus afin d’assurer la qualité du produit final. En équipe, rencontrez-vous et discutez-en.
-- Définir le terme terminé
-  - Terminé pour une user story
-- Remise
-  - Modèle : Sprint0 - Définition terminé.docx
-  - Vous devez publier l’information dans votre Wiki de votre projet Azure DevOps
+---
 
-### Architecture et Design
+## 5. Récits Utilisateurs (User Stories)
 
-- Produire un **diagramme de classe conceptuel**
-  - Contient les composantes qui seront dans le MVP
-  - TODO À préciser
-- De plus, précisez le choix d’architecture (ex : MVC) et justifiez le.
-- Décision sur le framework de codification et mise en place
-- Décision sur IDE et outils
-- Framework de test prêt
-- Remise
-  - Vous devez publier l’information dans votre **Wiki de votre projet Azure DevOps**
+### Critères INVEST
+* **I**ndépendante
+* **N**égociable
+* **V**aleur ajoutée
+* **E**stimable
+* **S**uccincte (petite)
+* **T**estable
+
+### Format Standard
+> **En tant que** `<type d'utilisateur>`
+> **Je veux** `<action / objectif immédiat>`
+> **Afin de** `<valeur d'affaire>`
+
+*C'est un contrat entre l'équipe et le PO. Le PO accepte l'implémentation sur la base des critères d'acceptation.*
+
+### Critères d'acceptation (Gherkin)
+Chaque fonctionnalité doit inclure des scénarios de test (Base, Variantes, Exceptions).
+
+**Format Gherkin :**
+```gherkin
+Scénario : Titre du scénario
+    Étant donné (Given) ... [Préconditions / État initial]
+    Lorsque (When) ... [Élément déclencheur / Action]
+    Alors (Then) ... [Résultat attendu / Postconditions]

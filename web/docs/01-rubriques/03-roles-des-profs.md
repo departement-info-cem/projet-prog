@@ -20,7 +20,7 @@ Ce qu'il ne fait pas:
 - coder ou vous aider avec le code
 - définir les fonctionnalités à développer
 
-## Product Owner ou P.O.
+## Product Owner ou le P.O. (et pas PO, PO est coach technique)
 
 Le Product Owner détient les détails des fonctionnalités à développer.
 
@@ -29,6 +29,7 @@ Ce qu'il fait:
 - mener la planification de sprint
 - assister à la revue de sprint et accepter / refuser les récits utilisateurs
 - répondre aux questions pour clarifier les fonctionnalités
+- il aide au grooming du backlog avant la planification
 
 **Évaluations**: il note les fonctionnalités de l'application à la fin du projet (équipe)
 
@@ -57,7 +58,6 @@ Le coach processus aide à l'analyse du projet
 
 Ce qu'il fait:
 - il aide dans la documentation des besoins fonctionnels
-- il aide au grooming du backlog avant la planification
 
 **Évaluations**: il note votre dossier d'analyse (individuel)
 
