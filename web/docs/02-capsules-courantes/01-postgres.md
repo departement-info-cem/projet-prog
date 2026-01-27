@@ -2,6 +2,9 @@
 
 Ce n'est pas toujours facile de trouver un hébergement gratuit pour un serveur de BD SQL et pour le projet on a décidé d'utiliser une BD Postgres. En plus, ça vous permet d'apprendre quelque chose! Ça reste du SQL, donc ce que vous avez appris en cours fonctionne toujours, mais chaque technologie à ses propres fonctionnalités, subtilités et ses propres outils.
 
+
+## Configuration dans VisualStudio
+
 Voici donc comment faire la configuration dans votre projet:
 
 - Ajouter la librairie pour entity avec Postgres
@@ -27,6 +30,19 @@ Si vous voulez effacer votre BD (ou faire des Select ou autres opérations de BD
 :::danger
 Si vous changez de technologie de BD (par exemple de MS SQL SERVER vers Postgres) et que vous avez déjà des migrations, il faut les effacer et les refaire toutes! Pourquoi? Ces fichiers contiennent des commandes spécifiques à la technologie de BD qui sont suffisament différentes pour que ça ne soit pas compatible.
 :::
+
+## Module PostGIS
+
+Il faut également ajouter un module qui se nomme PostGIS et qui est utilisé, vous l'aurez deviné, pour la géo localisation. Pour faire ça facilement, utilisez cet outil:
+![alt text](image-7.png)
+
+Il faut sélectionner votre installation de BD (un seul choix possible) et ensuite:
+
+![alt text](image-8.png)
+
+Après, c'est simplement d'utiliser les options par défaut et de terminer l'installation!
+
+## Gestion de la BD
 
 Pour gérer vos BDs Postgres, il y a un outil de ligne de commande déjà installé sur vos postes:
 
