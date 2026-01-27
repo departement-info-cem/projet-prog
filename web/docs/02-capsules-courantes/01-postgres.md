@@ -1,3 +1,6 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Base de données Postgres
 
 Ce n'est pas toujours facile de trouver un hébergement gratuit pour un serveur de BD SQL et pour le projet on a décidé d'utiliser une BD Postgres. En plus, ça vous permet d'apprendre quelque chose! Ça reste du SQL, donc ce que vous avez appris en cours fonctionne toujours, mais chaque technologie à ses propres fonctionnalités, subtilités et ses propres outils.
@@ -44,7 +47,10 @@ Après, c'est simplement d'utiliser les options par défaut et de terminer l'ins
 
 ## Gestion de la BD
 
-Pour gérer vos BDs Postgres, il y a un outil de ligne de commande déjà installé sur vos postes:
+Pour gérer vos BDs Postgres, il y a plusieurs outils préinstallés sur votre poste :
+
+<Tabs>
+<TabItem value="cli" label="Ligne de commande" default>
 
 ![alt text](image-6.png)
 
@@ -59,3 +65,52 @@ Au moment de taper le mot de passe, rien ne s'affiche pendant que vous tapez, ma
 :::danger
 C'est normal de se connecter à la BD **postgres** dans ce cas, on ne **peut pas** effacer la BD sur laquelle on est présentement connecté!
 :::
+
+</TabItem>
+<TabItem value="dg" label="DataGrip" default>
+
+    <Row>
+
+    <Column>
+
+    Pour activer la license, sélectionner l'option **"License server"**. Le serveur de license du CÉGEP devrait être trouvé automatiquement. Vous pouvez ensuite sélectionner **Activate**.
+
+    ![alt text](dg-1.png)
+
+    </Column>
+
+    <Column>
+
+    Sur l'interface principale, vous pouvez sélectionner le dossier de votre projet de code serveur. Honnêtement, n'importe quel dossier peut faire l'affaire.
+
+    ![alt text](dg-2.png)
+
+    </Column>
+
+    </Row>
+
+    <Row>
+
+    <Column>
+
+    On peut maintenant ajouter une connexion à un serveur de base de données. Vous pouvez sélectionner Postgres dans la liste.
+
+    ![alt text](dg-3.png)
+
+    </Column>
+    <Column>
+
+    Les informations de connexion au serveur préinstallé sont nom d'utilisateur : `postgres` et le mot de passe `Passw0rd`.
+
+    ![alt text](dg-4.png)
+    </Column>
+    </Row>
+
+Le serveur ajouté devrait s'afficher dans la liste du Database Explorer. Vous pourrez sélectionner les bases de données qui vous intéressent.
+
+![alt text](dg-5.png)
+
+Vous pouvez maintenant faire des requêtes, explorer les tables dans la BD, etc.
+
+</TabItem>
+</Tabs>
