@@ -31,9 +31,10 @@ Supabase nous offre une bd postgres 100% gratuite pour chaque projet que vous av
     ![Creer le projet](_03-supabase/supa4.png)
   </Column>
 </Row>
+- Il faut choisir Method: "Session pooler"
 <Row>
   <Column size="8">
-    ![Creer le projet](_03-supabase/supa5.png)
+    ![alt text](_03-supabase/supa6a.png)
   </Column>
 </Row>
 - Ajouter la Connection String au projet C# et remplacer le mot de passe
