@@ -1,5 +1,3 @@
-
-
 # Coordonnées géographiques
 
 Mis à jour en janvier 2026
