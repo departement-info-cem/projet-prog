@@ -1,0 +1,7 @@
+<h1>Ajouter un marqueur simple sur une carte</h1>
+
+<google-map (mapClick)="onClickOnMap($event)" [options]="mapOptions" height="350px" width="100%">
+    @for (position of markerPositions; track position) {
+    <map-advanced-marker [position]="position" />
+    }
+</google-map>

@@ -1,0 +1,13 @@
+<h1>Dessiner un polygone</h1>
+
+<p>Commencer à cliquer pour dessiner un nouveau polygone. Pour terminer le polygone en cours, cliquer sur le premier
+    point du polygone identifié par un marqueur.</p>
+
+<google-map (mapClick)="onClickOnMap($event)" [options]="mapOptions" height="350px" width="100%">
+    @for (polygon of polygons(); track polygon) {
+    <map-polygon [paths]="polygon" />
+    }
+    @if(startOfPolygonMarker) {
+    <map-advanced-marker (mapClick)="endPolygon()" [position]="startOfPolygonMarker" />
+    }
+</google-map>
