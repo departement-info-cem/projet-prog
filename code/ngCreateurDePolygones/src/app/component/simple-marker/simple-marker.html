@@ -1,9 +1,22 @@
 <h1>Ajouter un marqueur simple sur une carte</h1>
 
-<p> Cliquez sur la carte pour ajouter un marqueur. </p>
+<p>Cliquez sur la carte pour ajouter un marqueur.</p>
+
+<!-- Sélecteur de style de marqueur -->
+
+<label>Style du prochain marqueur :</label>
+<div>
+    @for (icon of availableIcons; track icon) {
+    <button (click)="selectIcon(icon)">
+        {{ icon }}
+    </button>
+    }
+</div>
+<span>Sélectionné : {{ selectedIcon }}</span>
+
 
 <google-map (mapClick)="onClickOnMap($event)" [options]="mapOptions" height="350px" width="100%">
-    @for (position of markerPositions; track position) {
-    <map-advanced-marker [position]="position" />
+    @for (marker of markers; track marker.position) {
+    <map-advanced-marker [position]="marker.position" [content]="marker.content" />
     }
 </google-map>
